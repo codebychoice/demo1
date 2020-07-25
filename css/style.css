@@ -62,7 +62,7 @@ h1, h2, h3{
     color: #fff;
 }
 .bg-light{
-    background: #fff;
+    background: #f4f4f4;
     color: #333;
 }
 .bg-primary{
@@ -72,6 +72,10 @@ h1, h2, h3{
 
 .clr{
     clear: both;
+}
+
+.l-heading{
+    font-size: 40px;
 }
 
 /* Navbar */
@@ -175,6 +179,8 @@ h1, h2, h3{
 #main-footer{
     text-align: center;
     padding : 20px;
+    background: #444;
+    color: #fff;
 }
 
 /* Contact */
@@ -205,5 +211,67 @@ h1, h2, h3{
 #contact-form .form-group textarea:focus{
     outline: none;
     border-color: #f7c08a;
+    
+}
+/* About */
+#about-info{
+    padding: 30px 10px;
+   
+}
+#about-info .info-left{
+    width : 50%;
+    float: left;
+    min-height: 100%;
+}
+
+#about-info .info-right{
+    width : 50%;
+    float: right;
+    min-height: 100%;
+}
+
+#about-info .info-right img{
+    display: block;
+    width: 70%;
+    margin: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Feedback */
+#feedback{
+    background: url('../img/test-bg.jpg') no-repeat center center/cover;
+    height: 450px;
+    text-align: center;
+    padding-top: 50px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+#feedback ::before{
+    content:'';   
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #333;
+    opacity: 0.1;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    
+}
+#feedback .guest{
+    height: 150px;
+}
+#feedback .guest{
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+#feedback .guest img{
+    width: 100px;
+    float: left;
+    margin-right: 20px;
     
 }
