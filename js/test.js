@@ -17,6 +17,11 @@ function changeValue(event){
     }else if(value == 'Three'){
         document.getElementById('input2').value = "";
         document.getElementById('input2-div').hidden = true;
+    }else{
+        document.getElementById('input2').value = value;
+        document.getElementById('input2-div').hidden = false;
+        document.getElementById('input2').readOnly = false;
+        document.getElementById('input2').style.cursor = 'text';
     }
 }
 
