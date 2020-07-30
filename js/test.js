@@ -20,8 +20,8 @@ function changeValue(event){
     }else{
         document.getElementById('input2').value = value;
         document.getElementById('input2-div').hidden = false;
-        document.getElementById('input2').readOnly = false;
-        document.getElementById('input2').style.cursor = 'text';
+        document.getElementById('input2').readOnly = true;
+        document.getElementById('input2').style.cursor = 'not-allowed';
     }
 }
 
